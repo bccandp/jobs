@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a[href^="tel"] {
+  text-decoration: inherit;
+  font-weight: bold;
+  color: #894fab;
+  transition: all 0.05s ease;
+}
+
+body {
+  background-color: white !important;
+  height: 100vh;
+}
+
+nav {
+  color: white;
+  background-color: #894fab;
+  height: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  height: auto;
+  max-height: 100%;
+  width: auto;
+  max-width: 100px;
+}
+
+.head-title {
+  padding-left: 15px;
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  transition: all 0.5s ease;
+}
+
+.nav-links li {
+  padding: 15px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.burger div {
+  width: 22px;
+  height: 2px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.help-top {
+  border: solid 2px white;
+  border-radius: 30px;
+  padding: 10px 15px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.help-top:hover {
+  color: black;
+  background-color: white;
+}
+
+.banner {
+  display: none !important;
+}
+
+.banner marquee {
+  color: white;
+  background-color: #d52c1f;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.banner a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.spLink {
+  width: 100%;
+  padding: 25px 0 0;
+}
+
+.spLink a {
+  padding: 0px 40px;
+  color: #894fab;
+}
+
+.calcWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 76vh;
+}
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.qbcalcForm {
+}
+
+.weatherWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.weatherwidget-io {
+  width: 95%;
+  margin: 20px !important;
+  pointer-events: none;
+  cursor: default;
+}
+
+#radar {
+  width: 95% !important;
+  height: 60vh !important;
+  padding: 20px 10px !important;
+}
+
+section h1 {
+  font-size: 36px;
+}
+
+.error {
+  min-height: calc(100vh - 198px) !important;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error > div {
+  padding: 18px;
+}
+
+.errorIcon img {
+  height: 140px;
+  width: auto;
+  transform: translateY(40px);
+  z-index: -1;
+}
+
+.text-section,
+.btn-section {
+  z-index: 1;
+}
+
+.text-section h3 {
+  font-weight: lighter;
+}
+
+.btn-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-section .btn {
+  margin: 8px;
+}
+
+.cta-wrapper {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.cta-bubble {
+  background: #1982fc;
+  border-radius: 30px;
+  width: auto;
+  max-width: 500px;
+  height: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.cta-text {
+  padding: 20px;
+  text-align: left;
+  color: white;
+}
+
+.cta-text a {
+  color: white;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  transition: all 0.5s ease;
+}
+
+.btn {
+  background-color: #894fab;
+  width: 260px;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.statement {
+  padding: 25px 40px;
+}
+
+.statement .title {
+  font-size: 15px;
+}
+
+.form-wrapper {
+  padding: 40px 10px;
+  z-index: 1;
+}
+
+.form-wrapper a {
+  font-weight: bold;
+}
+
+.quick-help {
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  color: rgb(102, 102, 102);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.quick-help h1 {
+  padding: 20px 10px 10px 10px;
+}
+
+.quick-help .qh-icons {
+  padding: 20px;
+  display: flex;
+  overflow-wrap: normal;
+}
+
+.quick-help .qh-icons > div {
+  padding: 10px;
+}
+
+.quick-help .icon-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.quick-help .icon-block .icon {
+  height: 125px;
+  width: 125px;
+  padding-bottom: 8px;
+}
+
+.ticket-cta {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: #a1e68d;
+}
+
+.ticket-cta h1 {
+  padding: 20px 10px 30px 10px;
+}
+
+.ticket-cta .btn {
+  font-size: 16px;
+}
+
+.alt-cta {
+  width: 100%;
+  height: auto;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2% 10%;
+  color: rgb(102, 102, 102);
+}
+
+.alt-cta h3 {
+  font-weight: lighter;
+  width: 100%;
+}
+
+.alt-cta a {
+  color: #894fab;
+  text-decoration: none;
+}
+
+.blank {
+  height: 200px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #e0e0e0;
+  color: #666666;
+  padding: 20px 40px;
+  position: relative;
+  bottom: 0;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.footer .copyright-text a {
+  color: #894fab;
+  padding: 0px 2px;
+}
+
+@media screen and (max-width: 970px) {
+  html,
+  body {
+    transition: all 0.5s ease;
+  }
+
+  .overflow {
+    position: relative;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+    transition: all 0.5s ease;
+  }
+
+  .head-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    position: absolute;
+    z-index: 100;
+    right: 0px;
+    height: 100vh;
+    width: 260px;
+    top: 0vh;
+    padding-top: 20px;
+    background-color: #894fab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+  }
+
+  .nav-links li {
+    width: 188px;
+    text-align: left;
+    padding: 9.75px 0px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 2px;
+  }
+
+  .burger {
+    display: block;
+    transition: all 0.5s ease;
+  }
+
+  .errorIcon img {
+    transform: translateY(20px);
+  }
+
+  .btn-section {
+    flex-direction: column;
+  }
+
+  .cta-wrapper {
+    flex-direction: column;
+  }
+
+  .quick-help h1,
+  .ticket-cta h1 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .qh-icons {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 125px));
+    width: 100%;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .alt-cta {
+    font-size: 14px;
+    padding: 8%;
+  }
+}
+
+.nav-active {
+  height: 100vh !important;
+  overflow-y: hidden !important;
+  transition: all 0.5s ease;
+}
+
+.body-slide {
+  transform: translateX(-260px);
+  transition: all 0.5s ease;
+}
+
+.slide-reverse {
+  transform: translateX(260px);
+  transition: all 0.5s ease;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 6px);
+  transition: all 0.5s ease;
+}
+
+.toggle .line2 {
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -6px);
+  transition: all 0.5s ease;
+}
+
+.lessthan {
+  position: absolute;
+}
