@@ -107,7 +107,7 @@ nav {
 }
 
 .banner {
-  display: none !important;
+  display: inherit !important;
 }
 
 .banner marquee {
@@ -268,10 +268,42 @@ section h1 {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 30px;
+}
+
+.welcome {
+  padding: 25px;
+  height: 400px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: grayscale();
+  -webkit-backdrop-filter: grayscale();
+  background-image: url("/classroom-teacher-with-students.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome::after {
+  content: "";
+  background: rgba(000, 000, 000, 0.4);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.welcome > * {
+  margin: 10px;
 }
 
 .statement {
@@ -280,6 +312,7 @@ section h1 {
 
 .statement .title {
   font-size: 15px;
+  padding: 20px 0;
 }
 
 .form-wrapper {
