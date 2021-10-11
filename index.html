@@ -44,11 +44,163 @@
     <a href="/application" class="btn">Apply Now!</a>
 </section>
 
+<section class="faq">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<h2 class="heading">
+    Frequently Asked Questions
+  </h2> 
+<section class="faq-wrap">
+<div class="tabs">
+      <div class="tab">
+        <input type="checkbox" id="chck1">
+        <label class="tab-label" for="chck1">Do I need any special training?</label>
+        <div class="tab-content">
+          <p><b>Yes, if offered employment, you will undergo certain required trainings in addition to other trainings specific to the age group in which you're assigned to. These trainings will be completed during your orientation unless previously completed and documentation is provided and approved. <br>
+          Trainings Include:</b><br>
+          -Cardiopulmonary Rescucitation (CPR)<br>
+          -First Aid<br>
+          -Automatic External Defibrillator (AED)<br>
+          -Anaphylaxis Recognition<br>
+          -Epinepherine Auto-Injector Administration<br>
+          -Universal Precautions & Bloodborne Pathogens<br>
+          -Infant Safe Sleep Practices: Modules 1 & 2<br>
+          -Child Abuse & Neglect Recognition
+        </p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck2">
+        <label class="tab-label" for="chck2">What are the requirements for employment?</label>
+        <div class="tab-content">
+          <p><b>You are required to complete an application for employment, undergo the interview process, and complete the following pre-employment screening:</b><br>
+            -Substance Abuse Drug Screen Panel<br>
+            -Indiana State Police Criminal History Search<br>
+            -Federal Bureau of Investigation (FBI) Criminal History Search<br>
+            -Child Protective Index (CPI/CPS) History Search<br>
+            -Reference Check
+        </p>
+        </div>
+      </div>
+   <div class="tab">
+        <input type="checkbox" id="chck3">
+        <label class="tab-label" for="chck3">What are some of the responsibilities?</label>
+        <div class="tab-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+        </div>
+      </div>
+   <div class="tab">
+        <input type="checkbox" id="chck4">
+        <label class="tab-label" for="chck4">Is my child able to attend if I'm also an employee?</label>
+        <div class="tab-content">
+          <p><b>Yes, your child or children are able to attend at a discounted rate.</b><br>
+          -Payment is made via automatic payroll deduction every pay period<br>
+          -You may not be placed for employment in the classroom in which your child is assigned
+        </p>
+        </div>
+      </div>
+    </div>
+</section>  
+  <style>
+ .faq-wrap{
+     font-family: 'Montserrat' , sans-serif;
+
+    }
+    
+ .heading{
+     font-size:20px;
+     text-transform: uppercase;
+     color: #894FAB;
+     padding-bottom: 20px;
+    }
+ input {
+	 position: absolute;
+	 opacity: 0;
+	 z-index: -1;
+}
+ .row {
+	 display: flex;
+}
+ .row .col {
+	 flex: 1;
+}
+ .row .col:last-child {
+	 margin-left: 1em;
+}
+/* Accordion styles */
+ .tabs {
+	 border-radius: 20px;
+	 overflow: hidden;
+	 box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+ .tab {
+	 width: 100%;
+	 color: white;
+	 overflow: hidden;
+}
+ .tab-label {
+	 display: flex;
+	 justify-content: space-between;
+     align-items: center;
+	 padding: 1em;
+	 background: #C0C0C0;
+     font-family: 'Montserrat' , sans-serif;
+	 font-weight: 500;
+	 cursor: pointer;
+	/* Icon */
+}
+ .tab-label:hover {
+	 background: #894FAB;
+}
+ .tab-label::after {
+	 content: "\f138";
+     font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+	 width: 1em;
+	 height: 1em;
+	 text-align: center;
+     vertical-align: center;
+     line-height: 18px;
+	 transition: all 0.35s;
+}
+ .tab-content {
+	 max-height: 0;
+	 padding: 0 1em;
+     font-family: 'Montserrat' , sans-serif;
+	 color: rgba(26,26,26,1);
+	 background: white;
+	 transition: all 0.35s ease;
+}
+ .tab-close {
+	 display: flex;
+	 justify-content: flex-end;
+	 padding: 1em;
+	 font-size: 0.75em;
+	 background: rgba(137,79,171,0.4);
+	 cursor: pointer;
+}
+ .tab-close:hover {
+	 background: rgba(137,79,171,0.4);
+}
+ input:checked + .tab-label {
+	 background: #894FAB;
+}
+ input:checked + .tab-label::after {
+	 transform-origin: center center !important;
+     transform: rotate(90deg);
+}
+ input:checked ~ .tab-content {
+	 max-height: 100vh;
+	 padding: 1em;
+}
+  </style>
+</section>
+
 <section class="statement">
     <h3 class="title">Anti-Discriminatory Statement</h3>
     <p>Bethany Childcare & Preschool provides equal employment opportunities to all employees and applicants for employment and prohibits discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state or local laws.
         <br><br>
-        This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation and training</p>
+        This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation and training.</p>
 </section>
 
 <footer class="footer">

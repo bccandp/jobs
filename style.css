@@ -290,6 +290,7 @@ section h1 {
   background-image: url("/classroom-teacher-with-students.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top 20% center;
   position: relative;
 }
 
@@ -304,6 +305,20 @@ section h1 {
 
 .welcome > * {
   margin: 10px;
+}
+
+.faq {
+  padding: 25px 40px;
+}
+
+.faq-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  width: 85%;
 }
 
 .statement {
