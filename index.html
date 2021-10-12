@@ -110,7 +110,6 @@
   <style>
  .faq-wrap{
      font-family: 'Montserrat' , sans-serif;
-
     }
     
  .heading{
@@ -141,7 +140,7 @@
 }
  .tab {
 	 width: 100%;
-	 color: white;
+	 color: #894FAB;
 	 overflow: hidden;
 }
  .tab-label {
@@ -149,10 +148,11 @@
 	 justify-content: space-between;
      align-items: center;
 	 padding: 1em;
-	 background: #C0C0C0;
+	 background: rgb(230, 230, 230);
      font-family: 'Montserrat' , sans-serif;
 	 font-weight: 500;
 	 cursor: pointer;
+     transition: all ease .16s;
 	/* Icon */
 }
 
@@ -165,14 +165,14 @@
 	 text-align: center;
      vertical-align: center;
      line-height: 18px;
-	 transition: all 0.35s;
+	 transition: all 0.14s;
 }
  .tab-content {
 	 max-height: 0;
 	 padding: 0 1em;
      font-family: 'Montserrat' , sans-serif;
 	 color: rgba(26,26,26,1);
-	 background: white;
+	 background: rgb(245, 245, 245);
 	 transition: all 0.35s ease;
 }
  .tab-close {
@@ -186,6 +186,7 @@
  
  input:checked + .tab-label {
 	 background: #894FAB;
+     color: #fff;
 }
  input:checked + .tab-label::after {
 	 transform-origin: center center !important;

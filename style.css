@@ -325,7 +325,7 @@ section h1 {
 }
 
 .faq {
-  padding: 30px 40px 0;
+  padding: 40px 40px 0;
 }
 
 .faq-wrap {
@@ -339,7 +339,7 @@ section h1 {
 }
 
 .statement {
-  padding: 20px 40px 25px;
+  padding: 20px 40px 30px;
 }
 
 .statement .title {
@@ -462,6 +462,7 @@ section h1 {
 @media screen and (min-width: 971px) {
   .tab-label:hover {
     background: #894fab;
+    color: #fff;
   }
 }
 
@@ -524,6 +525,7 @@ section h1 {
 
   .tab-label:active {
     background: #894fab !important;
+    color: #fff;
   }
 
   .btn-section {
