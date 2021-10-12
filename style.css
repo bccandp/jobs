@@ -325,7 +325,7 @@ section h1 {
 }
 
 .faq {
-  padding: 25px 40px;
+  padding: 30px 40px 0;
 }
 
 .faq-wrap {
@@ -339,7 +339,7 @@ section h1 {
 }
 
 .statement {
-  padding: 25px 40px;
+  padding: 20px 40px 25px;
 }
 
 .statement .title {
