@@ -501,6 +501,10 @@ section h1 {
     transform: translateY(20px);
   }
 
+  .tabs {
+    width: 100%;
+  }
+
   .tab-label:active {
     background: #894fab !important;
   }
