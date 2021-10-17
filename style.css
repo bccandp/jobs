@@ -348,6 +348,10 @@ section h1 {
   padding: 20px 0;
 }
 
+.app-wrap {
+  padding: 20px 40px;
+}
+
 .form-wrapper {
   padding: 40px 10px;
   z-index: 1;
