@@ -258,7 +258,7 @@ section h1 {
 .btn {
   background-color: #894fab;
   width: 260px;
-  border: none;
+  border: 2px solid #894fab;
   color: white;
   padding: 15px 20px;
   font-family: "Montserrat", sans-serif;
