@@ -108,7 +108,7 @@ nav {
 }
 
 .banner {
-  display: inherit !important;
+  display: none;
 }
 
 .banner marquee {
