@@ -47,7 +47,7 @@ function windowOnClick(event) {
 window.onload = function(){
   setTimeout(function(){
          toggleModal();
-     }, 3000)
+     }, 2000)
 }
 
 closeButton.addEventListener("click", toggleModal);
