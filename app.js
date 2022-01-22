@@ -30,3 +30,25 @@ const navSlide = () => {
 }
 
 navSlide();
+
+const modal = document.querySelector(".modal");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+window.onload = function(){
+  setTimeout(function(){
+         toggleModal();
+     }, 3000)
+}
+
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
