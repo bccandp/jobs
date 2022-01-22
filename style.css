@@ -359,8 +359,12 @@ section h1 {
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 2rem 2.5rem;
-  width: 26rem;
-  border-radius: 1rem;
+  width: clamp(26%, 400px, 88%);
+  border-radius: 0.3rem;
+}
+
+.modal-title, .modal-body, .modal-terms, .modal-btn {
+  padding: 6px;
 }
 
 .close-button {
