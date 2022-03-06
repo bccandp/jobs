@@ -361,6 +361,10 @@ section h1 {
   padding: 2rem 2.5rem;
   width: clamp(26%, 400px, 88%);
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-title, .modal-body, .modal-terms, .modal-btn {
@@ -375,6 +379,7 @@ section h1 {
   cursor: pointer;
   border-radius: 0.25rem;
   background-color: lightgray;
+  margin-left: 20rem;
 }
 
 .close-button:hover {
