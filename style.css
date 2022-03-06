@@ -365,6 +365,23 @@ section h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Font Awesome 5 Free";
+}
+
+.modal-title {
+  margin-top: 14px;
+}
+
+.modal-body::before {
+  content: "\f53d";
+  font-family: "Font Awesome 5 Free";
+  padding: 8px;
+  color: #47d147;
+  font-size: larger;
+}
+
+.modal-btn {
+  margin: 22px;
 }
 
 .modal-title, .modal-body, .modal-terms, .modal-btn {
@@ -372,14 +389,15 @@ section h1 {
 }
 
 .close-button {
-  float: right;
+  position: fixed;
   width: 1.5rem;
   line-height: 1.5rem;
   text-align: center;
   cursor: pointer;
   border-radius: 0.25rem;
   background-color: lightgray;
-  margin-left: 20rem;
+  top: 32px;
+  right: 38px;
 }
 
 .close-button:hover {
