@@ -516,6 +516,11 @@ section h1 {
 .footer .copyright-text a {
   color: #894fab;
   padding: 0px 2px;
+  text-decoration: none;
+}
+
+.footer .copyright-text a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 971px) {
