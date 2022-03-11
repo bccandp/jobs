@@ -736,7 +736,7 @@ body{
    cursor: pointer;
 }
  
-.child1 .footer-nav h3:hover{
+.child1 .footer-nav a:hover{
  color: #894FAB;
    cursor: pointer;
 }
