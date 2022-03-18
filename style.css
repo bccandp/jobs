@@ -626,6 +626,12 @@ section h1 {
     font-size: 14px;
     padding: 8%;
   }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .nav-active {
