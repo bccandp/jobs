@@ -339,6 +339,11 @@ section h1 {
   width: 85%;
 }
 
+/*disable modal pop-up*/
+.modal{
+  display: none;
+}
+
 .modal {
   position: fixed;
   left: 0;
